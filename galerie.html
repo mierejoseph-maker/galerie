@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie — Brazzaville &amp; Fleuve Congo</title>
+    <link rel="stylesheet" href="galerie.css" />
+  </head>
+  <body>
+    <header class="site-head">
+      <p class="eyebrow">Congo · Brazzaville</p>
+      <h1>Rives du <em>Fleuve</em><br />&amp; du quotidien</h1>
+      <p class="lede">
+        Une sélection de scènes captées entre Poto-Poto et les berges du Congo —
+        paysages, fêtes Akiéni et portraits de la Sape.
+      </p>
+    </header>
+
+    <nav class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="paysage">Paysages</button>
+      <button class="filter-btn" data-filter="akieni">Événements Akiéni</button>
+      <button class="filter-btn" data-filter="portrait">
+        Portraits &amp; Sape
+      </button>
+      <button class="filter-btn" data-filter="architecture">
+        Architecture
+      </button>
+    </nav>
+
+    <main class="gallery-wrap">
+      <div class="gallery" id="gallery">
+        <article class="card featured">
+          <img
+            src="bd0ec23d49f244794a45f6219cf18c.jpg"
+            alt="coucher du soleil sur le fleuve Congo"
+          />
+          <div class="overlay">
+            <span class="tag">Paysage</span>
+            <h3>Coucher du soleil sur le fleuve Congo</h3>
+            <p>
+              Le fleuve s'embrase chaque soir face à Kinshasa, vu depuis la
+              corniche
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="OIP.jpg" alt="Akiéni" />
+          <div class="overlay">
+            <span class="tag">Événement Akiéni</span>
+            <h3>Akiéni Academy</h3>
+            <p>
+              Akieni Academy t'accompagne pour transformer la motivation en
+              compétences utiles et en opportunité réelles
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Sapeur-03-RF1226436.webp" alt="Sapeur en costume" />
+          <div class="overlay">
+            <span class="tag">Portrait</span>
+            <h3>Sapeur en costume</h3>
+            <p>
+              Elégance et couleurs vives, art de vivre bien connu à Brazzaville
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="1b1043797564f164ae90dd48437d1a11.jpg"
+            alt="Basilique sainte-Anne"
+          />
+          <div class="overlay">
+            <span class="tag">Architecture</span>
+            <h3>Basilique sainte-Anne</h3>
+            <p>La plus grande basilique de l'afrique central</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="26b67798501d25f420f230512e1f6c47.jpg"
+            alt="Marché de Poto-Poto"
+          />
+          <div class="overlay">
+            <span class="tag">Architecture</span>
+            <h3>Marché de Poto-Poto</h3>
+            <p>Etals de tissus wax et pagnes colorés au petit matin</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="forêt-équatoriale-1024x680.jpg"
+            alt="Lisière de forêt équatoriale"
+          />
+          <div class="overlay">
+            <span class="tag">Paysage</span>
+            <h3>Lisière de forêt équatoriale</h3>
+            <p>Vert profond aux abord du pool Malebo</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <div class="pagination" id="pagination"></div>
+
+    <footer>
+      Galerie de l'illustraction de la vie quotidienne à Brazzaville et sur les
+      rives du fleuve Congo.
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose" aria-label="Fermer">✕</button>
+      <button class="lb-prev" id="lbPrev" aria-label="Précédent">‹</button>
+      <button class="lb-next" id="lbNext" aria-label="Suivant">›</button>
+      <div class="lightbox-inner">
+        <img id="lbImg" src="" alt="" />
+        <div class="lightbox-caption">
+          <div>
+            <h3 id="lbTitle"></h3>
+            <p id="lbDesc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
